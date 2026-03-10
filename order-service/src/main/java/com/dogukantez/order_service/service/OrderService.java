@@ -13,6 +13,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class OrderService {
     private final KafkaTemplate<String,String> kafkaTemplate;
+    
 
     @Scheduled(fixedRate = 2000)
     public void processOrder(){
